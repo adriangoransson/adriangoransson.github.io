@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Adrian Göransson</title>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="wrap">
+    <h1>
+      <a href="/">Adrian Göransson</a>
+    </h1>
+  </header>
+
+  <nav class="separator">
+    <ul class="wrap">
+      <li>
+        <a href="#cv">cv</a>
+      </li>
+      <li>
+        <a href="#contact">contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- About -->
+    <section class="wrap">
+      <img id="me" src="profile.jpg">
+
+      <h2>Hi!</h2>
+
+      <p>
+        I'm a <span id="age">21</span> year old software developer and network technician based outside Malmö, Sweden.
+      </p>
+
+      <p>
+        My development focuses mainly on the web.
+        I have experience with building RESTful APIs in PHP and Python backends.
+        I've also built single page apps to communicate with said APIs using popular Javascript and CSS frameworks.
+      </p>
+
+      <p>
+        Programming first started out as a hobby for me when studying network technology at school (NTI-gymnasiet Lund).
+        Today I'm proud to be certified by Cisco with a CCNA.
+        Being one of only two students at my school during my time there to receive the certification.
+        Knowledge in routing, switching, firewalls and IPSec&nbsp;(VPN). <!-- Don't want a line break before parentheses :) -->
+      </p>
+
+      <p>
+        I like flying, and my next goal is to take a private pilot's license which I'm currently studying for.
+      </p>
+
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <div class="separator wrap">
+        <h2>Curriculum Vitae</h2>
+      </div>
+      <div class="wrap">
+        <p>
+          <a href="/adrian.goransson_cv.pdf">
+            <i class="fa fa-file-text fa-lg"></i>
+              cv.pdf
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="separator wrap">
+        <h2>Contact me!</h2>
+      </div>
+      <div class="wrap">
+
+        <h3>Directly</h3>
+        <p><a href="tel:+46709226719"><i class="fa fa-fw fa-2x fa-phone"></i> +46 709 22 67 19</a></p>
+        <p><a href="mailto:adrian@adriang.se"><i class="fa fa-fw fa-2x fa-envelope"></i> adrian@adriang.se</a></p>
+
+        <h3>Or find me here:</h3>
+        <p id="links">
+          <span>
+            <a target="_blank" href="https://www.linkedin.com/in/adriangoransson" title="LinkedIn"><i class="fa fa-fw fa-2x fa-linkedin"></i>/adriangoransson</a>
+          </span>
+          <span>
+            <a target="_blank" href="https://github.com/adriangoransson" title="Github"><i class="fa fa-fw fa-2x fa-github"></i>/adriangoransson</a>
+          </span>
+          <span>
+            <a target="_blank" href="https://twitter.com/dumadrian" title="Twitter"><i class="fa fa-fw fa-2x fa-twitter"></i>/dumadrian</a>
+          </span>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+<script type="text/javascript">
+  'use strict';
+  // lazy?
+  // efficient!
+  // ...
+  // nah, just lazy
+
+  var ageElement = document.getElementById('age'),
+      birth = new Date('1994-02-04'),
+      today = new Date(),
+      years = today.getFullYear() - birth.getFullYear(),
+      monthDifference = today.getMonth() - birth.getMonth(),
+      dayDifference = today.getDate() - birth.getDate();
+
+  // please stop trying to break things, thanks!
+  if (today.getFullYear() > 2015) {
+    // if january || feb && feb 1-3
+    if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+      years--;
+    }
+
+    ageElement.innerHTML = years;
+  }
+</script>
+</body>
+</html>

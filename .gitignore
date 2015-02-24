@@ -1,0 +1,7 @@
+.DS_Store
+
+bower_components
+*.aux
+*.log
+*.out
+*.sublime-workspace
