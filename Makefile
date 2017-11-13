@@ -1,20 +1,11 @@
-.PHONY: all clean css cv
+.PHONY: all cv
 
-# ===================
-
-all: css cv
-
-css: style.css
+all: clean cv
 cv: *.pdf
 
 clean:
-	rm -rf *.aux *.log *.out *.pdf style.css
-
-# ===================
-
-style.css: src/style.scss
-	sassc -t compressed $< $@
+	rm -rf *.aux *.log *.out *.pdf
 
 # In the very unlikely event that I would have more than one .tex file.
-%.pdf: src/%.tex
+%.pdf: %.tex
 	pdflatex $<

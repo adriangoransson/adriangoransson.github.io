@@ -1,1 +1,59 @@
-@import url(http://fonts.googleapis.com/css?family=Slabo+13px);body{font-family:'Slabo 13px', Georgia, serif;color:#333}a{color:#333;text-decoration:none;transition:0.25s color}a:hover{color:#8E0000}p{line-height:1.4}nav ul{padding:0;list-style:none}nav ul li{display:inline-block}nav ul li:first-child{margin-left:-20px}nav ul li a{padding:15px 20px;display:inline-block}.wrap{max-width:520px;margin:auto;padding:0 15px}.separator{background:-moz-linear-gradient(left rgba(239,239,239,0) 0%, rgba(239,239,239,0) 5%, rgba(239,239,239,0.75) 50%, rgba(239,239,239,0) 95%, rgba(239,239,239,0) 100%);background:-webkit-gradient(linear, left top, right top, color-stop(0%, rgba(239,239,239,0)), color-stop(5%, rgba(239,239,239,0)), color-stop(50%, rgba(239,239,239,0.75)), color-stop(95%, rgba(239,239,239,0)), color-stop(100%), rgba(239,239,239,0));background:-webkit-linear-gradient(left rgba(239,239,239,0) 0%, rgba(239,239,239,0) 5%, rgba(239,239,239,0.75) 50%, rgba(239,239,239,0) 95%, rgba(239,239,239,0) 100%);background:-o-linear-gradient(left rgba(239,239,239,0) 0%, rgba(239,239,239,0) 5%, rgba(239,239,239,0.75) 50%, rgba(239,239,239,0) 95%, rgba(239,239,239,0) 100%);background:-ms-linear-gradient(left rgba(239,239,239,0) 0%, rgba(239,239,239,0) 5%, rgba(239,239,239,0.75) 50%, rgba(239,239,239,0) 95%, rgba(239,239,239,0) 100%);background:linear-gradient(to right, rgba(239,239,239,0) 0%, rgba(239,239,239,0) 5%, rgba(239,239,239,0.75) 50%, rgba(239,239,239,0) 95%, rgba(239,239,239,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00efefef', endColorstr='#00efefef',GradientType=1)}.separator h2{padding:10px 0}#me{border-radius:50%;float:right;max-width:45%}@media screen and (max-width: 545px){#me{max-width:55%}}@media screen and (max-width: 545px){#links span{display:block;margin:1em 0}}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #262626;
+    font-family: 'Fira Mono', monospace;
+    padding: 0 20px;
+}
+
+header {
+    padding-top: 5%;
+    margin: 0 auto 15px;
+}
+
+header, main {
+    max-width: 700px;
+}
+
+main {
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+small {
+    color: #4d4d4d;
+}
+
+a {
+    text-decoration: none;
+    color: #ee0000;
+    padding: 3px;
+}
+
+a:hover {
+    background: #ee0000;
+    color: #fff;
+}
+
+a:focus {
+    color: #000;
+    background: #ee0000;
+}
+
+.fa {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 550px) {
+    .links span {
+        display: block;
+    }
+}
