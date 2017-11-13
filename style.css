@@ -19,7 +19,7 @@ header, main {
 }
 
 main {
-    margin: 0 auto;
+    margin: 0 auto 15px;
     line-height: 1.4;
 }
 
