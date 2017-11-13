@@ -54,22 +54,16 @@
     \section*{Presentation}
 
         % picture of me!
-        \begin{wrapfigure}{r}{0.4\textwidth}\centering
-            \includegraphics[width=5.5cm]{profile.jpg}
+        \begin{wrapfigure}[9]{R}{.4\textwidth}\centering
+            \includegraphics[width=5.5cm]{profile.png}
         \end{wrapfigure}
 
-        I'm a 21 year old software developer and network technician based outside Malmö, Sweden.
+        I'm a software developer and network technician from Malmö, Sweden.
 
-        My development focuses mainly on the web.
-        I have experience with building RESTful APIs in PHP and Python backends.
+        I have experience with building RESTful APIs in PHP, Python and Go backends.
         I've also built single page apps to communicate with said APIs using popular Javascript and CSS frameworks.
 
-        Programming first started out as a hobby for me when studying network technology at school.
-        Today I'm proud to be certified by Cisco with a CCNA.
-        Being one of only two students at my school during my time there to receive the certification.
-        Knowledge in routing, switching, firewalls and IPSec (VPN).
-
-        I like flying, and my next goal is to take a private pilot's license which I'm currently studying for.
+        Programming started out as a hobby for me when studying network technology at school. It has since become one of my primary interests.
 
     \section*{Education}
 
@@ -77,66 +71,70 @@
 
             IT program with an initial focus on web design and computer internals during the first year.
             Second and third year focus shifted to network and Cisco technologies.
-            Graduated with a Cisco CCNA certification.
+            Graduated with a Cisco CCNA certification (Valid 2013-2016).
+
+        \subsection*{Linköping University \worktime{2016-2017}}
+
+            Foundation year in natural science (Tekniskt basår).
+            Courses required to apply for engineering programs.
+
+        \subsection*{Lund University \worktime{2017-}}
+
+            The Computer Science and Engineering program at Lunds Tekniska Högskola.
 
     \section*{Work experience}
 
-            \subsection*{Beepsend AB \worktime{2013-}}
+            \subsection*{Beepsend AB (Acquired by Twilio 2017) \worktime{2013-2016}}
+                Beepsend (now Twilio Sweden) was an SMS company specializing in A2P (application to peer) messaging.\\
+                I helped build its customer portal as well as internal administrative tools.
 
-                Beepsend is an SMS company specializing in A2P (application to peer) messaging.\\
-                I've helped build its customer portal as well as internal administrative tools.
-                Single page apps built with Chaplin js and Bootstrap using Coffeescript and LESS.
-
-                I've worked with the internal and public APIs that are made in PHP using the Slim framework,
-                Redis for caching and MySQL + MySQL Cluster as a database backend.
-                RabbitMQ is used for instant messaging and a socket server written in
-                Python brings instant updates to the frontend via Websockets.
-
-                Network administrations work has included setting up IPSec VPNs towards clients
-                using the software OpenSwan on Linux servers.\\
-                I've also set up and maintained Beepsend's SMSC and STP as well as the SS7 and SIGTRAN
-                connections that connects to some of the worlds biggest signaling providers
-                in order to provide cheap and reliable messaging.
+                \begin{itemize}
+                    \item Frontend apps in Javascript and Coffeescript
+                    \item RESTful API written in PHP
+                    \item Websocket server in Python
+                    \item MySQL, Redis
+                    \item Server administration and maintenance
+                    \item SMPP, SS7 and SIGTRAN experience
+                \end{itemize}
 
             \subsection*{CDON Group \worktime{2012}}
 
-                I worked at CDON Group for 5 weeks as part of an internship.
-                My primary purpose was internal IT support for some 250 people with a
+                5 weeks as part of an internship.
+                My primary purpose was internal IT support for around 250 people with a
                 big focus on Microsoft enterprise deployment solutions.
 
-    \section*{Languages}
-        Fluent in Swedish (native language) and English.
 
     \section*{Programming experience}
 
-        \subsection*{Web developer}
+        \subsection*{Web development}
             \begin{itemize}
-                \item HTML5.
-                \item CSS3, SCSS (SASS) and LESS.
-                \item Javascript and Coffeescript development.
-                \item Javscript frameworks: Chaplin, Backbone.js and AngularJS.
-                \item CSS frameworks: Bootstrap.
+                \item HTML5
+                \item CSS3, SCSS (SASS) and LESS
+                \item Javscript and Coffeescript (React, Mithril, Backbone.js, Chaplin)
             \end{itemize}
 
-        \subsection*{PHP developer}
+        \subsection*{PHP}
             \begin{itemize}
-                \item Web development.
-                \item API development.
-                \item MySQL databases as database backend.
-                \item Redis used for caching.
+                \item Web and API development (Slim framework)
             \end{itemize}
 
-        \subsection*{Python developer}
+        \subsection*{Python}
             \begin{itemize}
-                \item Web development with Flask.
-                \item Command line scripts.
+                \item Web and API development (Flask)
+                \item Scripting
             \end{itemize}
 
-        \subsection*{General}
+        \subsection*{Go}
             \begin{itemize}
-                \item Experienced user of Git for version control.
-                \item Shell scripting in Bash and Zsh.
-                \item Some experience with Objective C and iOS development.
+                \item Web and API development (Gin framework)
+                \item Services
+            \end{itemize}
+
+        \subsection*{Misc}
+            \begin{itemize}
+                \item Experienced user of Git for version control
+                \item Shell scripting in Bash and Zsh
+                \item Some experience with Rust
             \end{itemize}
 
 
@@ -144,36 +142,39 @@
 
         \subsection*{Network}
             \begin{itemize}
-                \item Cisco networking equipment and protocols.
-                \item Setting up and administrating small to medium sized networks.
-                \item IPSec.
-                \item Routing protocols.
-                \item Switching.
+                \item Cisco networking equipment and protocols
+                \item Setting up and administrating small to medium sized networks
+                \item Routing protocols
+                \item Switching
+                \item VPN
+                \begin{itemize}
+                    \item IPSec (LibreSwan)
+                    \item OpenVPN
+                \end{itemize}
             \end{itemize}
 
         \subsection*{Systems}
             \begin{itemize}
-                \item Linux (Debian and Ubuntu) servers.
-                \item Apache, Nginx.
-                \item Iptables.
-                \item OpenSwan (IPSec).
-                \item OpenVPN.
-                \item DnsMasq.
+                \item Linux (Debian and Ubuntu) servers
+                \item Apache, Nginx
+                \item Docker
+                \item Iptables
             \end{itemize}
 
         \subsection*{Telephony}
             \begin{itemize}
-                \item SS7.
-                \item SIGTRAN (M2PA).
-                \item SCCP.
-                \item Cisco ITP.
+                \item SS7 and SIGTRAN (M2PA and M3UA)
+                \item Cisco ITP
             \end{itemize}
+
+    \section*{Languages}
+        Fluent in Swedish (native language) and English.
 
     \section*{Miscellaneous}
         \begin{itemize}
-            \item Driver's license (Car/class B).
-            \item Experienced in Adobe's Creative Suite and especially proficient in Photoshop.
-            \item Uses Mac OSX on a daily basis. Very experienced with Windows and Linux desktop environments as well.
+            \item Driver's license (Car/class B)
+            \item Experienced in Adobe's Creative Suite and especially proficient in Photoshop
+            \item macOS user. Very experienced with Windows and Linux desktop environments as well
         \end{itemize}
 
 % phew, finally
