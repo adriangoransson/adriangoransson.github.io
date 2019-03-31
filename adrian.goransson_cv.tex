@@ -1,187 +1,135 @@
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 \usepackage[utf8]{inputenc}
-% page margins
-\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
-% profile picture
-\usepackage{graphicx}
-\usepackage{wrapfig}
-% fancy page headers and footers
-\usepackage{fancyhdr}
-% hyperlink support
+% Don't highlight links
 \usepackage[hidelinks]{hyperref}
-% font
-\usepackage{paratype}
-\usepackage[T1]{fontenc}
+% Profile picture
+\usepackage{wrapfig}
+\usepackage{graphicx}
+% Headers/footers
+\usepackage{fancyhdr}
+
+% Font
+\usepackage{charter}
 
 \pagestyle{fancy}
-\headheight 14pt
 \linespread{1.1}
+
+\renewcommand{\headrulewidth}{0pt}
+\lfoot{\href{https://adriang.se}{https://adriang.se}}
+\cfoot{}
+\rfoot{\thepage}
 
 \newcommand{\worktime}[1]{
     \hfill \begin{normalsize}#1\end{normalsize}
 }
 
+\newcommand{\school}[2]{\subsection*{#1 \worktime{#2}}}
+\newcommand{\employment}[3]{\subsection*{#2 | \textit{#1} \worktime{#3}}}
+
+\newcommand{\heading}[1]{
+    \pdfbookmark{#1}{#1} % necessary for unnumbered sections
+    \section*{#1
+        \medskip
+        \hrule
+    }
+}
+
 \begin{document}
 
-% fancy header setup
-\lhead{Adrian Göransson - CV}
-\chead{}
-\rhead{\today}
-\lfoot{
-    \begin{small}
-        \url{https://adriang.se}
-    \end{small}
-}
-\cfoot{}
-\rfoot{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\noindent
+\Huge Adrian Göransson \hfill \large +46 709 22 67 19\\
+\large \href{https://adriang.se}{https://adriang.se}
+\large \hfill \href{mailto:adrian@adriang.se}{adrian@adriang.se}
 
-% title
-    \begin{center}
-        \begin{Huge}
-            Adrian Göransson
-        \end{Huge}
+\heading{Presentation}
 
-        \begin{large}
-            Software developer and network technician
-        \end{large}
+    \begin{wrapfigure}[12]{r}{0.35\textwidth}
+        \includegraphics[width=5.3cm]{graphics/profile.png}
+    \end{wrapfigure}
 
-        +46 709 22 67 19 or \href{mailto:adrian@adriang.se}{adrian@adriang.se}
-    \end{center}
+    I'm a software developer with a background in networking from Malmö, Sweden.
+    Easy-going with a passion for building things, especially related to the web.
 
-% main content
-    \section*{Presentation}
+    \medskip
+    \noindent
+    Having always been "the computer guy", I started programming as a hobby while in secondary school.
+    Today it's turned into one of my greatest interests and I've since gone on to work as a developer and even start my own business.
 
-        % picture of me!
-        \begin{wrapfigure}[9]{R}{.4\textwidth}\centering
-            \includegraphics[width=5.5cm]{profile.png}
-        \end{wrapfigure}
+    \medskip
+    \noindent
+    I'm currently a student in computer science and engineering at LTH to further broaden my skill set.
+    I'm available for temporary and/or part time work.
 
-        I'm a software developer and network technician from Malmö, Sweden.
+\heading{Education}
 
-        I have experience with building RESTful APIs in PHP, Python and Go backends.
-        I've also built single page apps to communicate with said APIs using popular Javascript and CSS frameworks.
+    \school{Faculty of Engineering, Lund University}{September 2017 -}
+    Master of Science in Computer Science and Engineering at LTH.
 
-        Programming started out as a hobby for me when studying network technology at school. It has since become one of my primary interests.
+    \school{Linköping University}{2016 - 2017}
+    Foundation year in natural science (Tekniskt basår).
+    Courses required to apply for engineering programs.
 
-    \section*{Education}
+    \school{NTI-Gymnasiet Lund (Cisco Academy)}{2010 - 2013}
+    IT program with an initial focus on web design and computer internals during the first year.
+    Second and third year focus shifted to network and Cisco technologies.
+    Graduated with a Cisco CCNA certification (Valid 2013 - 2016).
 
-        \subsection*{Lund University (LTH) \worktime{2017-}}
+\heading{Experience}
 
-            The Computer Science and Engineering program at Lunds Tekniska Högskola.
+    \employment
+        {Co-founder, developer}
+        {\href{https://bitiq.se}{Bitiq}}
+        {February 2018 -}
 
-        \subsection*{Linköping University \worktime{2016-2017}}
+    Ticket distribution platform for student hosted events in Lund.
 
-            Foundation year in natural science (Tekniskt basår).
-            Courses required to apply for engineering programs.
+    \begin{itemize}
+        \item API written in Go using the Gin framework. Deployed on AWS Lambda
+        \item Web apps in Vue for ticket purchases, event management and ticket verification
+        \item Instant error reporting with Sentry
+        \item Continuous deployment with Netlify
+    \end{itemize}
 
-        \subsection*{NTI-Gymnasiet Lund (Cisco Academy)\worktime{2010-2013}}
+    \employment
+        {Visual Data Artist}
+        {\href{https://www.qlik.com/us/}{Qlik}}
+        {June - July 2018}
 
-            IT program with an initial focus on web design and computer internals during the first year.
-            Second and third year focus shifted to network and Cisco technologies.
-            Graduated with a Cisco CCNA certification (Valid 2013-2016).
+    Summer position in a team of three people. The goal was to create a proof of concept for a WYSIWYG
+    (What You See Is What You Get) data visualisation tool to further enhance Qlik's data analytics service. The product was developed with Vue and the chart library Picasso.js.
 
-    \section*{Work experience}
+    \employment
+        {Software developer}
+        {\href{https://www.beepsend.com/}{Beepsend}}
+        {July 2013 - July 2016}
 
-            \subsection*{Beepsend AB (Acquired by Twilio 2017) \worktime{2013-2016}}
-                Beepsend (now Twilio Sweden) was an SMS company specializing in A2P (application to peer) messaging.\\
-                I helped build its customer portal as well as internal administrative tools.
+    Beepsend, now Twilio Sweden, is an A2P (Application To Peer) messaging company that specialises in SMS.
+    \begin{itemize}
+        \item Internal and consumer facing RESTful APIs developed in PHP, using the Slim framework
+        \item Frontend web applications with Chaplin.js, written in Javascript and Coffeescript
+        \item Continuous integration using Jenkins
+    \end{itemize}
 
-                \begin{itemize}
-                    \item Frontend apps in Javascript and Coffeescript
-                    \item RESTful API written in PHP
-                    \item Websocket server in Python
-                    \item MySQL, Redis
-                    \item Server administration and maintenance
-                    \item SMPP, SS7 and SIGTRAN experience
-                \end{itemize}
+\heading{Skills}
 
-            \subsection*{CDON Group \worktime{2012}}
+    \begin{itemize}
+        \item Experienced programmer in Javascript, Python, Go, PHP, Java and Scala
+        \item Experienced in Linux server management and security
+        \item Experienced with Docker building and deployment
+        \item Proficient in git
+        \item Proficient shell user
+    \end{itemize}
 
-                5 weeks as part of an internship.
-                My primary purpose was internal IT support for around 250 people with a
-                big focus on Microsoft enterprise deployment solutions.
+\heading{General}
 
+    \begin{itemize}
+        \item Fluent in Swedish and English
+        \item Driver's licence (class B)
+    \end{itemize}
 
-    \section*{Programming experience}
+\bigskip
+\center \large References available upon request
 
-        \subsection*{Web development}
-            \begin{itemize}
-                \item HTML5
-                \item CSS3, SCSS (SASS) and LESS
-                \item Javscript and Coffeescript (React, Mithril, Backbone.js, Chaplin)
-            \end{itemize}
-
-        \subsection*{PHP}
-            \begin{itemize}
-                \item Web and API development (Slim framework)
-            \end{itemize}
-
-        \subsection*{Python}
-            \begin{itemize}
-                \item Web and API development (Flask)
-                \item Scripting
-            \end{itemize}
-
-        \subsection*{Go}
-            \begin{itemize}
-                \item Web and API development (Gin framework)
-                \item Services
-            \end{itemize}
-
-        \subsection*{Scala}
-            \begin{itemize}
-                \item Programming courses at Lund University
-                \item Multiple laborations and excercises
-            \end{itemize}
-
-        \subsection*{Misc}
-            \begin{itemize}
-                \item Experienced user of Git for version control
-                \item Shell scripting in Bash and Zsh
-                \item Some experience with Rust
-            \end{itemize}
-
-
-    \section*{Systems and networks experience}
-
-        \subsection*{Network}
-            \begin{itemize}
-                \item Cisco networking equipment and protocols
-                \item Setting up and administrating small to medium sized networks
-                \item Routing protocols
-                \item Switching
-                \item VPN
-                \begin{itemize}
-                    \item IPSec (LibreSwan)
-                    \item OpenVPN
-                \end{itemize}
-            \end{itemize}
-
-        \subsection*{Systems}
-            \begin{itemize}
-                \item Linux (Debian and Ubuntu) servers
-                \item Apache, Nginx
-                \item Docker
-                \item Iptables
-            \end{itemize}
-
-        \subsection*{Telephony}
-            \begin{itemize}
-                \item SS7 and SIGTRAN (M2PA and M3UA)
-                \item Cisco ITP
-            \end{itemize}
-
-    \section*{Languages}
-        Fluent in Swedish (native language) and English.
-
-    \section*{Miscellaneous}
-        \begin{itemize}
-            \item Driver's license (Car/class B)
-            \item Experienced in Adobe's Creative Suite and especially proficient in Photoshop
-            \item macOS user. Very experienced with Windows and Linux desktop environments as well
-        \end{itemize}
-
-% phew, finally
 \end{document}
