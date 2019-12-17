@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{xcolor}
+\usepackage{lastpage}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -25,8 +26,8 @@
 
 \renewcommand{\headrulewidth}{0pt}
 \lfoot{\href{https://adriang.se}{https://adriang.se}}
-\cfoot{}
-\rfoot{\thepage}
+\cfoot{\today}
+\rfoot{\thepage\ / \pageref*{LastPage}}
 
 \newcommand{\worktime}[1]{
     \hfill \begin{normalsize}#1\end{normalsize}
@@ -66,13 +67,13 @@
 
     \medskip
     \noindent
-    I'm currently a student in computer science and engineering at LTH to further broaden my skill set.
-    I'm available for temporary and/or part time work.
+    Currently a student in computer science and engineering at LTH to further broaden my skill set.
+    Available for temporary and/or part time work.
 
 \heading{Education}
 
-    \school{Faculty of Engineering, Lund University}{September 2017 -}
-    Master of Science in Computer Science and Engineering at LTH.
+    \school{Faculty of Engineering, Lund University}{Sep. 2017 - \emph{est. Jun. 2022}}
+    Master of Science in Computer Science and Engineering at LTH. Highlights so far include courses in concurrent programming, algorithms and data structures, computer communication and security as well as functional programming.
 
     \school{Linköping University}{2016 - 2017}
     Foundation year in natural science (Tekniskt basår).
@@ -88,21 +89,21 @@
     \employment
         {Co-founder, developer}
         {\href{https://bitiq.se}{Bitiq}}
-        {February 2018 -}
+        {Feb. 2018 - Mar. 2019}
 
     Ticket distribution platform for student hosted events in Lund.
 
     \begin{itemize}
-        \item API written in Go using the Gin framework. Deployed on AWS Lambda
-        \item Web apps in Vue for ticket purchases, event management and ticket verification
-        \item Instant error reporting with Sentry
-        \item Continuous deployment with Netlify
+        \item API written in Go using the Gin framework. Deployed on AWS Lambda.
+        \item Web apps in Vue for ticket purchases, event management and ticket verification.
+        \item Instant error reporting with Sentry.
+        \item Continuous deployment with Netlify.
     \end{itemize}
 
     \employment
         {Visual Data Artist}
         {\href{https://www.qlik.com/us/}{Qlik}}
-        {June - July 2018}
+        {Jun. - Jul. 2018}
 
     Summer position in a team of three people. The goal was to create a proof of concept for a WYSIWYG
     (What You See Is What You Get) data visualisation tool to further enhance Qlik's data analytics service. The product was developed with Vue and the chart library Picasso.js.
@@ -110,24 +111,24 @@
     \employment
         {Software developer}
         {\href{https://www.beepsend.com/}{Beepsend}}
-        {July 2013 - July 2016}
+        {Jul. 2013 - Jul. 2016}
 
     Beepsend, now Twilio Sweden, is an A2P (Application To Peer) messaging company that specialises in SMS.
     \begin{itemize}
-        \item Internal and consumer facing RESTful APIs developed in PHP, using the Slim framework
-        \item Frontend web applications with Chaplin.js, written in Javascript and Coffeescript
-        \item Continuous integration using Jenkins
+        \item Internal and consumer facing RESTful APIs developed in PHP, using the Slim framework.
+        \item Frontend web applications with Chaplin.js, written in Javascript and Coffeescript.
+        \item Continuous integration using Jenkins.
     \end{itemize}
 
 \heading{Skills}
 
     \begin{itemize}
-        \item Experienced programmer in Javascript, Python, Go, PHP and Java
-        \item Some experience with Rust, Scala and Haskell
-        \item Experienced in Linux server management and security
-        \item Experienced with Docker building and deployment
-        \item Proficient in git
-        \item Proficient shell user
+        \item Experienced programmer in Javascript, Python, Go, PHP and Java.
+        \item Some experience with Rust, Scala and Haskell.
+        \item Experienced in Linux server management and security.
+        \item Experienced with Docker building and deployment.
+        \item Proficient in git.
+        \item Proficient shell user.
     \end{itemize}
 
 \heading{Open source projects}
@@ -146,11 +147,11 @@
         Simple but customisable Pomodoro (study technique) "egg clock". Works just as well on mobile and desktop. Available offline with service workers and has notification support.
     \end{itemize}
 
-\heading{General}
+\heading{Miscellaneous}
 
     \begin{itemize}
-        \item Fluent in Swedish and English
-        \item Driver's licence (class B)
+        \item Fluent in Swedish and English.
+        \item Driver's licence (class B).
     \end{itemize}
 
 \bigskip
