@@ -1,0 +1,56 @@
+============================================================
+https://keybase.io/adriangoransson
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://adriang.se
+  * I am adriangoransson (https://keybase.io/adriangoransson) on keybase.
+  * I have a public key ASAYbjzC2A0xf-qpNm33jDTW8okXASTAGpIWae8ijbl55Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120186e3cc2d80d317feaa9366df78c34d6f289170124c01a921669ef228db979e40a",
+      "host": "keybase.io",
+      "kid": "0120186e3cc2d80d317feaa9366df78c34d6f289170124c01a921669ef228db979e40a",
+      "uid": "7b2fb87a80401d8d53cd06b9ca762000",
+      "username": "adriangoransson"
+    },
+    "merkle_root": {
+      "ctime": 1579101603,
+      "hash": "08767bb5c3624b5ceed5c9edd047a930948d3330e32559b1a9a9f8f48539fc13a8d937b8795901559a7adb4d4f82f1ba4bb00fde8737da44af58fa28ca5511e7",
+      "hash_meta": "a5392c5c63f358659336ee4b097d9712b20ca7a609186bed4d0fec1d7f6d0c2b",
+      "seqno": 14237618
+    },
+    "service": {
+      "entropy": "Drwnsu6g0Y3DyVCS/9XMjPaU",
+      "hostname": "adriang.se",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579101623,
+  "expire_in": 504576000,
+  "prev": "7ab204f7b269b7fa0ace93dc145805f1c13866b8549814bbf29f5039756c0735",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgGG48wtgNMX/qqTZt94w01vKJFwEkwBqSFmnvIo25eeQKp3BheWxvYWTESpcCHMQgerIE97Jpt/oKzpPcFFgF8cE4ZrhUmBS78p9QOXVsBzXEIFXgRFGoVXU+YSP+JxpCqrajbYmpZF6PO5iqPP+IZBEtAgHCo3NpZ8RAv1EhGkzSgBSBKfViac4yZYHYkksGidqu/cbpHv6txNoSPhz8wiZoze0i1OXMWUQXvu1d0/ehP1chVzxGTvVbCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBmpvSNERnz/3UpJ7eyXhqMpEa4bXdU9PnRA4tADUtkGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adriangoransson
+
+==================================================================
