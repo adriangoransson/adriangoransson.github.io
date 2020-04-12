@@ -1,6 +1,7 @@
 \documentclass[a4paper]{article}
 
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
 \usepackage{xcolor}
@@ -34,7 +35,7 @@
 }
 
 \newcommand{\school}[2]{\subsection*{#1 \worktime{#2}}}
-\newcommand{\employment}[3]{\subsection*{#2 | \textit{#1} \worktime{#3}}}
+\newcommand{\employment}[3]{\subsection*{#2 --- \textit{#1} \worktime{#3}}}
 
 \newcommand{\heading}[1]{
     \pdfbookmark{#1}{#1} % necessary for unnumbered sections
@@ -72,24 +73,24 @@
 
 \heading{Education}
 
-    \school{Faculty of Engineering, Lund University}{Sep. 2017 - \emph{est. Jun. 2022}}
+    \school{Faculty of Engineering, Lund University}{Sep. 2017 -- \emph{est. Jun. 2022}}
     Master of Science in Computer Science and Engineering at LTH. Highlights so far include courses in concurrent programming, algorithms and data structures, computer communication and security as well as functional programming.
 
-    \school{Linköping University}{2016 - 2017}
+    \school{Linköping University}{2016 -- 2017}
     Foundation year in natural science (Tekniskt basår).
     Courses required to apply for engineering programs.
 
-    \school{NTI-Gymnasiet Lund (Cisco Academy)}{2010 - 2013}
+    \school{NTI-Gymnasiet Lund (Cisco Academy)}{2010 -- 2013}
     IT program with an initial focus on web design and computer internals during the first year.
     Second and third year focus shifted to network and Cisco technologies.
-    Graduated with a Cisco CCNA certification (Valid 2013 - 2016).
+    Graduated with a Cisco CCNA certification (Valid 2013 -- 2016).
 
 \heading{Experience}
 
     \employment
         {Co-founder, developer}
         {Bitiq}
-        {Feb. 2018 - Mar. 2019}
+        {Feb. 2018 -- Mar. 2019}
 
     Ticket distribution platform for student hosted events in Lund. Serverless design to be able to scale well for specially popular events such as Valborg (Walpurgis eve).
 
@@ -102,7 +103,7 @@
     \employment
         {Visual Data Artist \begin{small}(Javascript developer)\end{small}}
         {\href{https://www.qlik.com/us/}{Qlik}}
-        {Jun. - Jul. 2018}
+        {Jun. -- Jul. 2018}
 
     Summer position in a team of three people. The goal was to create a proof of concept for a WYSIWYG
     (What You See Is What You Get) data visualisation tool to further enhance Qlik's data analytics service. The product was developed with Vue and the chart library Picasso.js.
@@ -111,7 +112,7 @@
         {DevOps}
         {\href{https://www.beepsend.com/}{Beepsend}
         \begin{small}(acquired by Twilio)\end{small}}
-        {Jul. 2013 - Jul. 2016}
+        {Jul. 2013 -- Jul. 2016}
 
     Beepsend, now known as Twilio Sweden, is an A2P (Application To Peer) messaging company specialising in SMS. During my employment I was part of a small team building our internal and costumer facing APIs and web apps. Due to my networking background I was also in charge of managing connectivity over VPN and SS7.
     \begin{itemize}
