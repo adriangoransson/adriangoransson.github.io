@@ -7,11 +7,8 @@
 \usepackage{xcolor}
 \usepackage{lastpage}
 
-\usepackage{hyperref}
-\hypersetup{
-  colorlinks = true,
-  allcolors  = teal,
-}
+% Color links except when printing. https://tex.stackexchange.com/a/4428
+\usepackage[ocgcolorlinks, allcolors=teal]{hyperref}
 
 % Profile picture
 \usepackage{wrapfig}
@@ -44,6 +41,8 @@
         \hrule
     }
 }
+
+\newcommand{\shorturl}[1]{\href{https://#1}{\texttt{#1}}}
 
 \begin{document}
 
@@ -133,18 +132,17 @@
         \item Proficient shell user.
     \end{itemize}
 
-\heading{Open source projects}
+\pdfbookmark{Open source projects}{Open source projects}
+\section*{Open source projects \hfill {\large \shorturl{github.com/adriangoransson}} \medskip \hrule}
 
     \begin{itemize}
         \item
-        \href{https://nationilund.se}{Nation i Lund}
-        (\href{https://nationilund.se/about.html}{source})
+        \href{https://nationilund.se}{\textbf{Nation i Lund}}\hfill \shorturl{nationilund.se}
 
         Listing of student nation events in Lund by scraping the official studentlund website.
         Much appreciated by other students and would later inspire the launch of Bitiq.
 
-        \item \href{https://pomodoro-tracker.netlify.com}{Pomodoro tracker}
-        (\href{https://github.com/adriangoransson/pomodoro}{source})
+        \item \href{https://pomodoro-tracker.netlify.com}{\textbf{Pomodoro tracker}} \hfill \shorturl{pomodoro-tracker.netlify.com}
 
         Simple but customisable Pomodoro (study technique) ``egg clock''. Works just as well on mobile and desktop. Available offline with service workers and has notification support.
     \end{itemize}
