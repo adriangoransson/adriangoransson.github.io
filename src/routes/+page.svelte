@@ -28,6 +28,7 @@
 	</p>
 
 	<section id="links">
+		<span><a href="/blog">blog</a></span>
 		<span><a href="https://github.com/adriangoransson">github</a></span>
 		<span><a href="https://www.linkedin.com/in/adriangoransson">linkedin</a></span>
 		<span><a href="mailto:adrian@adrg.se">adrian@adrg.se</a></span>
