@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg-color: #2a2e31;
+		--bg-color: #222222;
 		--text-color: #d3d2d2;
 		--secondary-text-color: #bdbcbc;
 		--highlight-color: #f86363;
