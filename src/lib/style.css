@@ -5,6 +5,8 @@
 	--text-color: #262626;
 	--secondary-text-color: #4d4d4d;
 	--highlight-color: #e90000;
+	--block-bg-color: #ffffff;
+	--block-border-color: #e1e4e8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
 		--text-color: #d3d2d2;
 		--secondary-text-color: #bdbcbc;
 		--highlight-color: #f86363;
+		--block-bg-color: #24292e;
+		--block-border-color: #3c3c3c;
 	}
 
 	img {
@@ -106,4 +110,34 @@ pre {
 
 :not(pre, a) > code {
 	color: var(--secondary-text-color);
+}
+
+details {
+	padding: 5px;
+	border-radius: 3px;
+}
+
+details summary {
+	cursor: pointer;
+}
+
+details,
+:not(details) > pre,
+blockquote,
+.block {
+	outline: 1px solid var(--block-border-color);
+}
+
+details,
+blockquote,
+.block {
+	background: var(--block-bg-color);
+}
+
+blockquote {
+	padding: 10px;
+}
+blockquote > p {
+	padding: 0;
+	margin: 0;
 }
