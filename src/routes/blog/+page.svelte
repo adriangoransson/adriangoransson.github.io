@@ -14,15 +14,15 @@
 	</header>
 
 	{#each data.posts as post}
-		<a class="alt" href={`${$page.route.id}/${post.path}`}
-			><span>
+		<a class="alt" href={`${$page.route.id}/${post.path}`}>
+			<span>
 				{post.title}
 			</span>
-			<span>
-				{#if post.date}
+			{#if post.date}
+				<span>
 					{post.date.substring(0, 10)}
-				{/if}
-			</span>
+				</span>
+			{/if}
 		</a>
 	{/each}
 </main>
@@ -31,10 +31,15 @@
 	header {
 		margin: 25px auto;
 	}
+
 	a {
 		display: flex;
 		justify-content: space-between;
 		padding: 5px;
+	}
+
+	a span:nth-child(2) {
+		flex-shrink: 0;
 	}
 
 	main {
