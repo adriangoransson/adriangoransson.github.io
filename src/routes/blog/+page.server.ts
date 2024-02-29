@@ -23,7 +23,7 @@ export const load = async () => {
 
 	const processed = posts
 		.filter((p) => dev || p.date) // Include dateless posts in dev mode (drafts).
-		.toSorted((p1, p2) => {
+		.sort((p1, p2) => {
 			if (p1.date === p2.date) {
 				return p1.title < p2.title ? -1 : 1;
 			}
