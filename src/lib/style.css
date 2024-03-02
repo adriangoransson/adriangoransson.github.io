@@ -72,27 +72,27 @@ h1 {
 	text-align: center;
 }
 
-a {
+a:not(.no-link-style) {
 	text-decoration: none;
 	color: var(--highlight-color);
 	padding: 0.02em 0.07em;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover:not(.no-link-style),
+a:focus:not(.no-link-style),
+a:active:not(.no-link-style) {
 	background: var(--highlight-color);
 	color: var(--bg-color);
 }
 
-a.alt {
+a.alt:not(.no-link-style) {
 	color: var(--text-color);
 }
-a.alt:hover {
+a.alt:hover:not(.no-link-style) {
 	color: var(--bg-color);
 }
 
-a:active {
+a:active:not(.no-link-style) {
 	background: var(--text-color);
 }
 
