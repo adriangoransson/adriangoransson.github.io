@@ -1,6 +1,6 @@
 import { dev } from '$app/environment';
 
-const pages = import.meta.glob('./*/+page.md');
+const pages = import.meta.glob('./*/+page.md', { eager: true });
 
 export interface Post {
 	title: string;
@@ -10,22 +10,18 @@ export interface Post {
 }
 
 export const load = async () => {
-	const posts = await Promise.all(
-		Object.entries(pages).map(async ([path, resolve]): Promise<Post> => {
-			const component = await resolve();
+	const posts = Object.entries(pages).map(([path, component]): Post => {
+		const pathSegments = path.split('/');
+		pathSegments.pop();
+		if (pathSegments[0] == '.') {
+			pathSegments.shift();
+		}
 
-			const pathSegments = path.split('/');
-			pathSegments.pop();
-			if (pathSegments[0] == '.') {
-				pathSegments.shift();
-			}
-
-			return {
-				...component.metadata,
-				path: pathSegments.join('/'),
-			};
-		}),
-	);
+		return {
+			...component.metadata,
+			path: pathSegments.join('/'),
+		};
+	});
 
 	const processed = posts
 		.filter((p) => dev || p.date) // Include dateless posts in dev mode (drafts).
