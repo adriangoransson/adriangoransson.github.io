@@ -14,9 +14,15 @@ export const load = async () => {
 		Object.entries(pages).map(async ([path, resolve]): Promise<Post> => {
 			const component = await resolve();
 
+			const pathSegments = path.split('/');
+			pathSegments.pop();
+			if (pathSegments[0] == '.') {
+				pathSegments.shift();
+			}
+
 			return {
 				...component.metadata,
-				path: path.split('+')[0],
+				path: pathSegments.join('/'),
 			};
 		}),
 	);
