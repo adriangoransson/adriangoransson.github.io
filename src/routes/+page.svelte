@@ -13,13 +13,13 @@
 </header>
 
 <main>
-	<p>Hi there! 👋</p>
+	<p>Hi there!&nbsp;👋</p>
 
 	<p>
 		I'm a passionate and experienced software engineer with an MSc. in Computer Science and
 		Engineering. I'm based in Stockholm, Sweden and am currently building things at
 		<a href="https://opti.se">Opti</a>, a financial robo-advisor where I'm learning a lot about
-		*hand waving* <em>the&nbsp;economy</em>.
+		*hand&nbsp;waving* <em>the&nbsp;economy</em>.
 	</p>
 
 	<p>
