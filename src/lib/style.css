@@ -89,6 +89,7 @@ a:active:not(.no-link-style) {
 a.alt:not(.no-link-style) {
 	color: var(--text-color);
 }
+
 a.alt:hover:not(.no-link-style) {
 	color: var(--bg-color);
 }
@@ -109,7 +110,7 @@ pre {
 	overflow-x: auto;
 }
 
-:not(pre, a) > code {
+:not(pre, a)>code {
 	color: var(--secondary-text-color);
 }
 
@@ -123,7 +124,7 @@ details summary {
 }
 
 details,
-:not(details) > pre,
+:not(details)>pre,
 blockquote,
 .block {
 	outline: 1px solid var(--block-border-color);
@@ -138,7 +139,8 @@ blockquote,
 blockquote {
 	padding: 10px;
 }
-blockquote > p {
+
+blockquote>p {
 	padding: 0;
 	margin: 0;
 }
