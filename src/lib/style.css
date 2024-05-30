@@ -144,3 +144,26 @@ blockquote>p {
 	padding: 0;
 	margin: 0;
 }
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+th {
+	font-weight: bold;
+}
+
+th,
+td {
+	border: 1px solid var(--block-border-color);
+	padding: 5px 15px;
+}
+
+tbody tr:hover {
+	background: var(--block-bg-color);
+}
+
+.table-container {
+	overflow-x: auto;
+}
