@@ -6,7 +6,7 @@ export interface Post {
 	title: string;
 	date?: string;
 	path: string;
-	blurb: string;
+	description?: string;
 }
 
 export const load = async () => {
