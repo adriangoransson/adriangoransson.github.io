@@ -35,10 +35,11 @@ up to date with possible changes in configuration or their terms of service.
 
 Netlify has very generous (free) pricing for their "edge functions". Edge
 functions are basically small, serverless [Deno][deno] scripts that you can run
-on your Netlify site, served on the Netlify CDN. There are similar options by
-other providers, such as Vercel, but I'm using Netlify because it's what I
-know. I also think that they do a great job of making deploys from git repos
-easy, with hardly no configuration necessary.
+on your Netlify site, served on the Netlify CDN. This is not an ad, and there
+are similar options by other providers --- such as Vercel and Cloudflare --- I'm
+just using Netlify because it's what I know. I also think that they do a great
+job of making deploys from git repos easy, with hardly no configuration
+necessary.
 
 Anyway, the edge function is really just this tiny snippet of code:
 
