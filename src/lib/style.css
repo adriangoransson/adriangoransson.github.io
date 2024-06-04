@@ -148,6 +148,7 @@ blockquote>p {
 table {
 	border-collapse: collapse;
 	margin: auto;
+	background: var(--block-bg-color);
 }
 
 th {
@@ -161,7 +162,7 @@ td {
 }
 
 tbody tr:hover {
-	background: var(--block-bg-color);
+	background: var(--bg-color);
 }
 
 .table-container {
