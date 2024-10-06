@@ -3,6 +3,10 @@ title: Parallel updates with Homebrew
 date: 2024-06-01
 ---
 
+Update 2024-10-06: Concurrent downloads seems to be on the roadmap (tracking
+issue [#18278]) and implemented for `brew fetch`. The option for now is
+["undocumented and unsupported"][hidden] but it's great to see it happen!
+
 <script>
 import demo from './demo.mp4';
 </script>
@@ -215,6 +219,8 @@ downloaded and proceeds.
 Homebrew is slow. Parallelizing part of the workload can make it slightly less
 slow.
 
+[#18278]: https://github.com/Homebrew/brew/issues/18278
+[hidden]: https://github.com/Homebrew/brew/pull/17756#issuecomment-2335179823
 [homebrew]: https://brew.sh/
 [homebrew-4.0]: https://brew.sh/2023/02/16/homebrew-4.0.0/
 [#1865]: https://github.com/Homebrew/brew/issues/1865
